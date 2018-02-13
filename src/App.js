@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import LoginForm from './LoginForm.js';
+import Header from './Header'
+import { Route } from 'react-router-dom'
 
 class LoginPage extends React.Component {
   submit = function(values) {
@@ -24,11 +26,16 @@ class LoginPage extends React.Component {
   }
 }
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <LoginPage />
+        <div>
+          <Header/>
+        </div>
+        <div>
+          <Route path="/register" component={LoginPage}/>
+        </div>
       </div>
     );
   }
