@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
 import LoginForm from './LoginForm.js'
-
-
-
 
 
 class LoginPage extends React.Component {
     submit = function(values){
-        console.log(values)
+        let {firstName, lastName, email, createPass, country} = values;
+        fetch("http://jsonplaceholder.typicode.com/users", {
+            method: 'POST',
+            body: JSON.stringify(
+                {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    pass: createPass,
+                    country: country
+                }
+            )
+
+        })
+            .then(response => response.json())
+            .then(json => console.log(json));
+
     };
 
     render(){
@@ -22,10 +33,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
         <LoginPage/>
       </div>
     );
