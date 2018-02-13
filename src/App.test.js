@@ -5,9 +5,9 @@ import {Provider} from 'react-redux';
 import store from './Store'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-    ReactDOM.render(<Provider store={store}><App /></Provider>, div);
-  ReactDOM.unmountComponentAtNode(div);
+    const div = document.createElement('div');
+    ReactDOM.render(<Provider store={store}><App/></Provider>, div);
+    ReactDOM.unmountComponentAtNode(div);
 });
 
 

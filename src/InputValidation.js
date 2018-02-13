@@ -12,4 +12,4 @@ function validEmail(value) {
         : undefined;
 }
 
-export { required, matchPW, validEmail}
+export {required, matchPW, validEmail}

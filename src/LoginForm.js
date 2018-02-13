@@ -5,8 +5,8 @@ import {required, matchPW, validEmail} from "./InputValidation";
 import {TextBox} from "./RegistrationInputs";
 
 
-let LoginForm = function(props){
-    const { handleSubmit } = props;
+let LoginForm = function (props) {
+    const {handleSubmit} = props;
     return (
         <form onSubmit={handleSubmit}>
             <div><Field name="email" component={TextBox} type="text" validate={[required, validEmail]}/></div>
@@ -18,7 +18,7 @@ let LoginForm = function(props){
 
             <button type="submit">Submit</button>
         </form>
-)
+    )
 };
 
 LoginForm = reduxForm({

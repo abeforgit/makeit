@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import LoginForm from './LoginForm.js'
 
 
 class LoginPage extends React.Component {
-    submit = function(values){
+    submit = function (values) {
         let {firstName, lastName, email, createPass, country} = values;
         fetch("http://jsonplaceholder.typicode.com/users", {
             method: 'POST',
@@ -24,19 +24,19 @@ class LoginPage extends React.Component {
 
     };
 
-    render(){
-        return <LoginForm onSubmit={this.submit} />
+    render() {
+        return <LoginForm onSubmit={this.submit}/>
     }
 }
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <LoginPage/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <LoginPage/>
+            </div>
+        );
+    }
 }
 
 export default App;
