@@ -1,4 +1,4 @@
-import CountrySelection from './CountrySelection';
+import CountrySelection from '../src/routes/Register/components/CountrySelection';
 import React from 'react';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import CountrySelection from './CountrySelection';
-import { required, matchPW, validEmail } from './InputValidation';
+import { required, matchPW, validEmail } from '../modules/InputValidation';
 import { TextBox } from './RegistrationInputs';
 
 let LoginForm = function(props) {

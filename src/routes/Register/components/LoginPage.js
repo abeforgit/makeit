@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from "react";
 import LoginForm from './LoginForm.js';
-import Header from './Header'
-import { Route } from 'react-router-dom'
 
 class LoginPage extends React.Component {
   submit = function(values) {
@@ -19,6 +16,7 @@ class LoginPage extends React.Component {
     })
       .then(response => response.json())
       .then(json => console.log(json));
+
   };
 
   render() {
@@ -26,19 +24,4 @@ class LoginPage extends React.Component {
   }
 }
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <div>
-          <Header/>
-        </div>
-        <div>
-          <Route path="/register" component={LoginPage}/>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default LoginPage;
