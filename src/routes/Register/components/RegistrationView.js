@@ -1,7 +1,7 @@
 import React from "react";
-import LoginForm from './LoginForm.js';
+import RegistrationForm from '../containers/RegistrationFormContainer';
 
-class LoginPage extends React.Component {
+class RegistrationView extends React.Component {
   submit = function(values) {
     let { firstName, lastName, email, createPass, country } = values;
     fetch('http://jsonplaceholder.typicode.com/users', {
@@ -20,8 +20,8 @@ class LoginPage extends React.Component {
   };
 
   render() {
-    return <LoginForm onSubmit={this.submit} />;
+    return <RegistrationForm onSubmit={this.submit} />;
   }
 }
 
-export default LoginPage;
+export default RegistrationView;

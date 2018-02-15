@@ -1,22 +1,27 @@
 import React from 'react';
 import '../App.css';
-import Header from './Header'
-import { Route } from 'react-router-dom'
-import LoginPage from '../routes/Register/components/LoginPage'
-
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import PropTypes from 'prop-types'
 
 
 class App extends React.Component {
+  static propTypes = {
+    store: PropTypes.object.isRequired,
+    routes: PropTypes.object.isRequired
+  };
+
+  shouldComponentUpdate() {
+    return false
+  }
+
   render() {
     return (
-      <div className="App">
+      <Provider store={this.props.store}>
         <div>
-          <Header/>
+          <Router children={this.props.routes}/>
         </div>
-        <div>
-          <Route path="/register" component={LoginPage}/>
-        </div>
-      </div>
+      </Provider>
     );
   }
 }
