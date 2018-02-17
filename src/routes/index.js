@@ -8,7 +8,7 @@ export const createRoutes = (store) => (
   <div>
     <CoreLayout/>
     <Route exact path='/' component={Home}/>
-    <RegistrationRoute/>
+    <Route path ='/register' component={RegistrationRoute}/>
   </div>
     );
 

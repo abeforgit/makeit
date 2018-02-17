@@ -1,8 +1,12 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
+import React from 'react';
+import Loadable from 'react-loadable'
 
-export default (store) => (
-<Route path='/register' getComponent={(nextstate, cb) => (
-  import(/* webpackChunkName: "register" */ './components/RegistrationView')
-    .then(RegistrationView => cb(null, RegistrationView)))}/>
-);
+
+const Loading = () => <div>Loading...</div>;
+
+const RegistrationPage = Loadable({
+  loader: () => import('./components/RegistrationView'),
+  loading: Loading,
+  });
+
+export default RegistrationPage
