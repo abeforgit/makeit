@@ -5,8 +5,9 @@ import { required, matchPW, validEmail } from '../modules/InputValidation';
 import  TextBox from './TextBox';
 import PropTypes from 'prop-types'
 
-const RegistrationForm = ( handleSubmit ) => (
-  <form onSubmit={handleSubmit}>
+const RegistrationForm = ( props ) => {
+  const { handleSubmit } = props;
+  return (<form onSubmit={handleSubmit}>
     <div>
       <Field
         name="email"
@@ -57,7 +58,7 @@ const RegistrationForm = ( handleSubmit ) => (
 
     <button type="submit">Submit</button>
   </form>
-);
+  )};
 
 RegistrationForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired
