@@ -4,6 +4,8 @@ import CountrySelection from './CountrySelection';
 import { required, matchPW, validEmail } from '../modules/InputValidation';
 import TextBox from './TextBox';
 import PropTypes from 'prop-types';
+import EmailSubBox from './EmailSubBox';
+import TermsCondBox from './TermsCondBox';
 
 const RegistrationForm = props => {
   const { handleSubmit } = props;
@@ -55,6 +57,13 @@ const RegistrationForm = props => {
           component={CountrySelection}
           validate={required}
         />
+      </div>
+      <div>
+        <Field name="emailSubscribe" component={EmailSubBox} />
+      </div>
+
+      <div>
+        <Field name="termsCond" component={TermsCondBox} validate={required} />
       </div>
 
       <button type="submit">Submit</button>
