@@ -16,8 +16,8 @@ TextBox.propTypes = {
   meta: PropTypes.shape({
     touched: PropTypes.bool.isRequired,
     error: PropTypes.string,
-    warning: PropTypes.string
-  }),
+    warning: PropTypes.string,
+  }).isRequired,
 };
 
 export default TextBox;
