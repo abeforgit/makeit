@@ -1,4 +1,4 @@
-import { required, matchPW, validEmail } from '../src/routes/Register/modules/InputValidation';
+import { required, matchPW, validEmail } from '../routes/Register/modules/InputValidation';
 
 test('Checks if undefined when value is present', () => {
   expect(required('someval')).toBeUndefined();
