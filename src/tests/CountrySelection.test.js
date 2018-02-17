@@ -8,6 +8,11 @@ import { CountryDropdown } from 'react-country-region-selector';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('<CountrySelection/>', () => {
+  test('Renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render();
+  });
+
   test('Renders one CountryDropdown component', () => {
     const input = { value: 'Belgium', onChange: () => undefined };
     const meta = { touched: false, error: '', warning: false };

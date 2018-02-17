@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../components/App';
-import store from './teststore/index';
 import routes from '../routes/index';
+import rootReducer from '../store/reducers';
+import { createStore } from 'redux';
+
+const store = createStore(rootReducer);
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

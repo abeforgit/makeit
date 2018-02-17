@@ -25,7 +25,7 @@ CountrySelection.propTypes = {
   meta: PropTypes.shape({
     touched: PropTypes.bool.isRequired,
     error: PropTypes.string,
-    warning: PropTypes.string,
+    warning: PropTypes.bool,
   }).isRequired,
 };
 
