@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CheckBox from './CheckBox';
+import { Link } from 'react-router-dom';
 
 const TermsCondBox = ({ input, meta }) => {
   const mylabel = (
-    <span>I agree to Viber Music Terms of Use, and Privacy Policy</span>
+    <span>
+      <span>I agree to Viber Music </span>
+      <Link to="/terms-of-use">Terms of Use</Link>
+      <span>, and </span>
+      <Link to="/privacy">Privacy Policy</Link>
+    </span>
   );
 
   return (
