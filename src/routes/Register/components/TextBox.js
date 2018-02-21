@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const TextBox = ({ input, label, type, meta: { touched, error, warning } }) => (
-  <div>
-    <input {...input} placeholder={label} type={type} />
+  <div className="textBoxGroup">
+    <input
+      {...input}
+      placeholder={label}
+      type={type}
+      className="textBoxControl"
+    />
     {touched &&
       ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}
   </div>

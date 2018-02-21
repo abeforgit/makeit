@@ -10,7 +10,7 @@ import TermsCondBox from './TermsCondBox';
 const RegistrationForm = props => {
   const { handleSubmit } = props;
   return (
-    <form onSubmit={handleSubmit} method="POST">
+    <form onSubmit={handleSubmit} method="POST" className="registrationForm">
       <div>
         <Field
           name="email"
