@@ -1,18 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import HeaderNavLink from './components/HeaderNavLink';
 
 const Header = () => (
-    <div>
-      <Link to="/" >Home</Link>
-      <div>
-        <Link to="/tracksubmit">Submit a track</Link>
-        <Link to="/register">Create an account</Link>
-        <Link to="/about">How it works</Link>
-        <Link to="/pricing">Pricing</Link>
-        <Link to="/login">Sign in</Link>
-      </div>
-    </div>
+  <ul className="nav nav-justified">
+    <HeaderNavLink to="/">Home</HeaderNavLink>
+    <HeaderNavLink to="/tracksubmit">Submit a track</HeaderNavLink>
+    <HeaderNavLink to="/register">Create an account</HeaderNavLink>
+    <HeaderNavLink to="/about">How it works</HeaderNavLink>
+    <HeaderNavLink to="/pricing">Pricing</HeaderNavLink>
+    <HeaderNavLink to="/login">Sign in</HeaderNavLink>
+  </ul>
 );
 
-export default Header
+export default Header;

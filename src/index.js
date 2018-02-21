@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
+import './styles/main.css';
 
 const MOUNT_NODE = document.getElementById('root');
 

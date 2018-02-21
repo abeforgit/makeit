@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const CheckBox = ({ input, label, meta: { touched, error, warning } }) => (
   <div>
-    <span>
-      <input {...input} type="checkbox" />
+    <span className="form-group">
+      <input {...input} type="checkbox" className="form-control" />
       <label>{label}</label>
     </span>
     {touched &&

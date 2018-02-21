@@ -6,11 +6,12 @@ const CountrySelection = ({
   input: { value, onChange },
   meta: { touched, error, warning },
 }) => (
-  <div>
+  <div className="form-group">
     <CountryDropdown
       value={value}
       onChange={onChange}
       defaultOptionLabel="Country of Residence"
+      classes="form-control"
     />
     {touched &&
       ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}

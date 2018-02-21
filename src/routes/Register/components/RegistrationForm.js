@@ -72,7 +72,9 @@ const RegistrationForm = props => {
         <Field name="termsCond" component={TermsCondBox} validate={required} />
       </div>
 
-      <button type="submit">Submit</button>
+      <button type="submit" className="form-control">
+        Submit
+      </button>
     </form>
   );
 };
