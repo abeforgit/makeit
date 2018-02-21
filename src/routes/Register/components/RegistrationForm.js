@@ -14,6 +14,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="email"
+          label="Email address"
           component={TextBox}
           type="text"
           validate={[required, validEmail]}
@@ -22,6 +23,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="firstName"
+          label="First Name"
           component={TextBox}
           type="text"
           validate={required}
@@ -30,6 +32,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="lastName"
+          label="Last Name"
           component={TextBox}
           type="text"
           validate={required}
@@ -38,6 +41,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="createPass"
+          label="Enter your password"
           component={TextBox}
           type="password"
           validate={required}
@@ -46,6 +50,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="verifyPass"
+          label="Confirm your password"
           component={TextBox}
           type="password"
           validate={[required, matchPW]}
@@ -54,6 +59,7 @@ const RegistrationForm = props => {
       <div>
         <Field
           name="country"
+          label="Country of residence"
           component={CountrySelection}
           validate={required}
         />
