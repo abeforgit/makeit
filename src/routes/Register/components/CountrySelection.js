@@ -11,7 +11,7 @@ const CountrySelection = ({
       value={value}
       onChange={onChange}
       defaultOptionLabel="Country of Residence"
-      classes="form-control"
+      classes="CountryDropdown form-control"
     />
     {touched &&
       ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}
