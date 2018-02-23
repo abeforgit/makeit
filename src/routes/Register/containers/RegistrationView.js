@@ -1,5 +1,5 @@
-import React from "react";
-import RegistrationForm from '../containers/RegistrationFormContainer';
+import React from 'react';
+import RegistrationForm from './RegistrationFormContainer';
 
 class RegistrationView extends React.Component {
   submit = function(values) {
@@ -16,7 +16,6 @@ class RegistrationView extends React.Component {
     })
       .then(response => response.json())
       .then(json => console.log(json));
-
   };
 
   render() {

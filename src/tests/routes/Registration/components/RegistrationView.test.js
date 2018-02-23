@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import RegistrationView from '../../../../routes/Register/components/RegistrationView';
+import RegistrationView from '../../../../routes/Register/containers/RegistrationView';
 import React from 'react';
 
 describe('<RegistrationView />', () => {
