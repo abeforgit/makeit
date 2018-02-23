@@ -23,73 +23,50 @@ const RegistrationForm = props => {
           component={TextBox}
           type="text"
           validate={[required, validEmail]}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
+
         <Field
           name="firstName"
           label="First Name"
           component={TextBox}
           type="text"
           validate={required}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
+
         <Field
           name="lastName"
           label="Last Name"
           component={TextBox}
           type="text"
           validate={required}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
+
         <Field
           name="createPass"
           label="Enter your password"
           component={TextBox}
           type="password"
           validate={required}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
+
         <Field
           name="verifyPass"
           label="Confirm your password"
           component={TextBox}
           type="password"
           validate={[required, matchPW]}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
+
         <Field
           name="country"
           label="Country of residence"
           component={CountrySelection}
           validate={required}
-          className={styles.inputGroup}
         />
-      </div>
-      <div>
-        <Field
-          name="emailSubscribe"
-          component={EmailSubBox}
-          className={styles.inputGroup}
-        />
-      </div>
 
-      <div>
-        <Field
-          name="termsCond"
-          component={TermsCondBox}
-          validate={required}
-          className={styles.inputGroup}
-        />
+        <Field name="emailSubscribe" component={EmailSubBox} />
+
+        <Field name="termsCond" component={TermsCondBox} validate={required} />
       </div>
 
       <button type="submit">Submit</button>
