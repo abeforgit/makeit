@@ -1,6 +1,7 @@
 :local(.header){
     display: flex;
     justify-content: space-between;
+    outline: #ECECEC solid 1px;
 }
 
 
@@ -12,11 +13,13 @@
 
 :local(.homelink){
     width: border-box;
+    margin: auto;
 
 
 }
 
 :local(.link){
+    margin: auto;
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
