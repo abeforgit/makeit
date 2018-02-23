@@ -15,7 +15,7 @@ const TermsCondBox = ({ input, meta }) => {
 
   return (
     <div>
-      <CheckBox label={mylabel} meta={meta} />
+      <CheckBox input={input} label={mylabel} meta={meta} />
     </div>
   );
 };
