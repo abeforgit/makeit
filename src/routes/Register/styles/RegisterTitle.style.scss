@@ -1,0 +1,28 @@
+@import "../../../styles/colors";
+
+:local(.container) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px $headerLine;
+  border-style: none none solid none;
+
+  padding: 20px 0;
+
+  margin: 0 0 10px 0;
+}
+
+:local(.signUp) {
+  margin: auto;
+
+  font-size: 18pt;
+
+  padding: 5px 0;
+
+  font-weight: bold;
+}
+
+:local(.welcome) {
+  margin: auto;
+  padding: 5px 0 20px 0;
+}

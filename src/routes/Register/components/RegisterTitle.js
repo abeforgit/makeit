@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../styles/RegisterTitle.style.css';
 
 const RegisterTitle = () => (
-  <div>
-    <h1>Sign up</h1>
-    <h2>Create a ViberMusic account</h2>
+  <div className={styles.container}>
+    <div className={styles.signUp}>Sign up</div>
+    <div className={styles.welcome}>Create a ViberMusic account</div>
   </div>
 );
 
