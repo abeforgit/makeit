@@ -1,0 +1,64 @@
+@import "../../../styles/colors";
+
+:local(.header){
+    display: flex;
+    justify-content: space-between;
+    outline: $headerLine solid 1px;
+}
+
+
+:local(.otherlinks){
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+:local(.homelink){
+    width: border-box;
+    margin: auto;
+
+
+}
+
+:local(.link){
+    margin: auto;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    text-transform: uppercase;
+}
+
+:local(.link:link) {
+    color: $headerText;
+}
+
+:local(.link:visited) {
+    color: $headerText;
+}
+
+:local(.link:focus){
+
+}
+
+:local(.link:hover){
+
+}
+
+:local(.link:active){
+
+}
+@media all and (max-width: 800px) {
+    :local(.header){
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 500px) {
+    :local(.header) {
+        flex-direction: column;
+    }
+
+    :local(.otherlinks){
+        flex-direction: column;
+    }
+}
