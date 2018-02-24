@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29b093bd-4b7b-44e6-8d99-96a5d7854627" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/routes/Register/components/RegisterTitle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/routes/Register/components/RegistrationPage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/routes/Registration/components/Title.test.js" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Register/containers/RegistrationView.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Register/index.js" afterPath="$PROJECT_DIR$/src/routes/Register/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/tests/routes/Registration/components/RegistrationView.test.js" afterPath="$PROJECT_DIR$/src/tests/routes/Registration/components/RegistrationView.test.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,6 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/makeit$Run_all_tests.coverage" NAME="Run all tests Coverage Results" MODIFIED="1518886655223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -77,8 +73,8 @@
           <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+                <state relative-caret-position="360">
+                  <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -535,7 +531,7 @@
       <workItem from="1519376728922" duration="14304000" />
       <workItem from="1519407062725" duration="1560000" />
       <workItem from="1519463818183" duration="599000" />
-      <workItem from="1519473100311" duration="860000" />
+      <workItem from="1519473100311" duration="1223000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1518276048014</created>
@@ -818,7 +814,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117744000" />
+    <option name="totallyTimeSpent" value="118107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1237,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="360">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
