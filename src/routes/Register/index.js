@@ -5,7 +5,7 @@ import Loadable from 'react-loadable'
 const Loading = () => <div>Loading...</div>;
 
 const RegistrationPage = Loadable({
-  loader: () => import('./containers/RegistrationView'),
+  loader: () => import('./components/RegistrationPage'),
   loading: Loading,
   });
 

@@ -9,6 +9,12 @@
 # production
 /build
 
+# misc resources
+/src/helperfiles
+
+#workspace
+/.idea/workspace.xml
+
 # misc
 .DS_Store
 .env.local
