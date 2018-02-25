@@ -12,6 +12,9 @@
 # misc resources
 /src/helperfiles
 
+# compiled css
+*.css
+
 #workspace
 /.idea/workspace.xml
 
