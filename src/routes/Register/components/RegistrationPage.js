@@ -1,6 +1,7 @@
 import React from 'react';
 import RegistrationForm from '../containers/RegistrationFormContainer';
 import RegisterTitle from './RegisterTitle';
+import styles from '../styles/RegistrationPage.style.css';
 
 const submit = values => {
   let { firstName, lastName, email, createPass, country } = values;
@@ -19,7 +20,7 @@ const submit = values => {
 };
 
 const RegistrationPage = () => (
-  <div>
+  <div className={styles.RegistrationPage}>
     <RegisterTitle />
     <RegistrationForm handleSubmit={submit} />
   </div>

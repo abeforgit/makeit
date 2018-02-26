@@ -18,6 +18,9 @@
 #workspace
 /.idea/workspace.xml
 
+#compiled css files
+*.css
+
 # misc
 .DS_Store
 .env.local
