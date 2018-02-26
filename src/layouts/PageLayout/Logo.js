@@ -6,7 +6,7 @@ const Logo = props => {
   return <img src={logo} alt={props.alt} />;
 };
 
-Logo.PropTypes = {
+Logo.propTypes = {
   alt: PropTypes.string.isRequired,
 };
 
